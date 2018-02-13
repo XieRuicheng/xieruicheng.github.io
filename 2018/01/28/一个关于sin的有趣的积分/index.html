@@ -1,14 +1,8 @@
 
 
-  
 
 
 
-
-  
-
-
-  
 
 
 <!doctype html>
@@ -22,9 +16,11 @@
   
   
   
-    <meta name="description" content="Every nountain is unclimbable until someone climbs it. So every ship is unsinkable until it sinks.">
+    <meta name="description" content="Solving the integral
+$$\int_{0}^{+\infty}\frac{\sin x}{x}dx,$$
+One easiest way to get this integral is to evaluate the following improper integral with parameter \(a\):">
   
-  <title>Archives: 1/2018: 2018 [ Xie Ruicheng ]</title>
+  <title>一个关于sin的有趣的积分 [ Xie Ruicheng ]</title>
   
   
     <link rel="shortcut icon" href="/笑脸.png">
@@ -43,6 +39,15 @@
 
 <body>
 <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="side-navigate hide-area">
+  
+    <div class="item prev">
+      <a href="/2018/01/30/hexo搭建个人blog/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        hexo 搭建个人博客
+      </div>
+    </div>
   
   
 </div>
@@ -69,7 +74,7 @@
           </li>
         
           
-            <li class="active">
+            <li>
           
             <a href="/archives">Archives</a>
             
@@ -122,146 +127,90 @@
     <div id="content-inner">
       
       
-  <article>
-    
-
-  <div id="recent-posts">
-    <h1>Archives
-    
-      <span class="posts-count">
-      Total
-      2
+  <article id="post">
+    <h1>一个关于sin的有趣的积分</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">Created at 2018-01-28</span>
       
-        posts
+        <span id = "post-title-updated">Updated at 2018-02-13</span>
+      
+      
+      <span id = "post-title-categories">Category
+      
+      
+        
+        
+        <a href="/categories/math/">math</a>
+      
+        
+          /
+        
+        
+        <a href="/categories/math/calculus/">calculus</a>
       
       </span>
-    
-    </h1>
-    
-    
+      
+      
+      <span id = "post-title-tags">
+      Tag
       
       
         
-      
-      
-    
-      
-      
-      
-    
-    
-    
-      
+        
+        <a href="/tags/math/">math</a>
       
         
-        <h3 class="archive-year-title">2018
+          /
         
-          <span class="posts-count">
-          Total
-          2
-          
-            posts
-          
-          </span>
         
-        </h3>
+        <a href="/tags/calculus/">calculus</a>
       
-      <div class="post-title-item">
-  
-  <a href="/2018/01/30/hexo搭建个人blog/">
-  
-    hexo 搭建个人博客
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">1-30</span>
-    
-    <span id = "post-title-categories">Category
-    
-    
+      </span>
       
-      
-      <a href="/categories/web/">web</a>
+    </p>
     
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    Tag
-    
-    
-      
-      
-      <a href="/tags/hexo/">hexo</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-    
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2018/01/28/一个关于sin的有趣的积分/">
-  
-    一个关于sin的有趣的积分
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">1-28</span>
-    
-    <span id = "post-title-categories">Category
-    
-    
-      
-      
-      <a href="/categories/math/">math</a>
-    
-      
-        /
-      
-      
-      <a href="/categories/math/calculus/">calculus</a>
-    
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    Tag
-    
-    
-      
-      
-      <a href="/tags/math/">math</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/calculus/">calculus</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-    
-  </div>
-
+    <p>Solving the integral</p>
+<p>$$\int_{0}^{+\infty}\frac{\sin x}{x}dx,$$</p>
+<p>One easiest way to get this integral is to evaluate the following improper integral with parameter \(a\):</p>
+<a id="more"></a>
+<p>$$ I(a)=\int_0^\infty e^{-ax}\frac{\sin x}{x}dx, a\ge 0.$$</p>
+<p>It is easy to see</p>
+<p>$$I’(a)=-\int_0^\infty e^{-ax}\sin xdx=\frac{e^{-ax}}{a^2+1}(a\sin x+\cos x)\big|_0^\infty=-\frac{1}{a^2+1}.$$</p>
+<p>Thus</p>
+<p>$$I(\infty)-I(0)=-\int_0^\infty\frac{1}{a^2+1}da=-\frac{\pi}{2}.$$</p>
+<p>Note \(I(\infty)=0\) and hence \(I(0)=\frac{\pi}{2}\).</p>
+<p>$$I’(a) = \int_{0}^{\infty}-e^{-ax} \sin xdx $$</p>
+<p>$$= \int_{0}^{\infty}e^{-ax} d\cos x $$</p>
+<p>$$= e^{-ax}\cos x - -\int_{0}^{\infty}e^{-ax}\cos xdx$$</p>
+<p>$$= \left[e^{-ax}\cos x + a\left[e^{-ax}\sin x + \int_{0}^{\infty}ae^{-ax}\sin xdx\right] \right]^{\infty}_0 $$</p>
+<p>$$= \left[ e^{-ax}\cos x + ae^{-ax}\sin x - a^2 I’(a) \right]^{\infty}_0 $$</p>
+<p>$$\therefore I’(a)= \frac{e^{-ax}}{1+a^2}(a\sin x + \cos x)\big|_0^\infty$$</p>
 
   </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <div class="random-toc">
+    <h2>Table of Content</h2>
+    
+  </div>
+</div>
+
+  
+<nav id="pagination">
+  
+    <a href="/2018/01/30/hexo搭建个人blog/" class="prev">&larr; Prev post hexo 搭建个人博客</a>
+  
+
+  
+
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
 
       
       
@@ -359,8 +308,8 @@ var unsplashConfig = {"gravity":"north"};
 var turnoffBackgroundImage = false;
 
 
-  turnoffBackgroundImage = true;
 
+  turnoffBackgroundImage = true;
 
 
 var backgroundColor = "34495E";
